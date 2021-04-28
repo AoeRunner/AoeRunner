@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suitename">
+    <test name="runAll">
+        <groups>
+            <run>
+                <include name="stu"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.course.test_ng.groups.GroupsOnClass1"/>
+            <class name="com.course.test_ng.groups.GroupsOnClass2"/>
+        </classes>
+    </test>
+</suite>
