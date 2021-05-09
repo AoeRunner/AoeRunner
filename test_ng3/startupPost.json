@@ -1,0 +1,74 @@
+[
+  {
+    "description": "模拟一个Post请求",
+    "request": {
+      "uri": "/postdemo",
+      "method": "post"
+    },
+    "response": {
+      "text": "这是我的第一个post请求",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  },
+
+  {
+    "description": "带参数的post请求",
+    "request": {
+      "uri": "/postwithparam",
+      "method": "post",
+      "forms": {
+        "name": "huhansan",
+        "sex": "man"
+      }
+    },
+    "response": {
+      "text": "huhansan go home with param"
+    }
+  },
+
+  {
+    "description": "这是带cookies的post请求",
+    "request": {
+      "uri": "/postwithcookies",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "huhansan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "name": "huhansan",
+        "age": "19"
+      }
+    }
+  },
+
+  {
+    "description": "这是带headers的post请求",
+    "request": {
+      "uri": "/postwithheaders",
+      "method": "post",
+      "headers": {
+        "content-type":"application/json"
+      },
+      "json": {
+        "name": "zhangsan",
+        "sex": "woman"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "name": "zhangsan",
+        "sex": "123"
+      }
+    }
+  }
+]

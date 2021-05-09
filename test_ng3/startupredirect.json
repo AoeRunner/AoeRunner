@@ -1,0 +1,25 @@
+[
+  {
+    "description": "123",
+    "request": {
+      "uri": "/redirect"
+    },
+    "redirectTo": "http://www.baidu.com"
+  },
+  {
+    "description": "134",
+    "request": {
+      "uri": "/redirects"
+    },
+    "redirectTo": "/redirect1111"
+  },
+  {
+    "description": "456",
+    "request": {
+      "uri": "/redirect1111"
+    },
+    "response": {
+      "text": "123456789"
+    }
+  }
+]

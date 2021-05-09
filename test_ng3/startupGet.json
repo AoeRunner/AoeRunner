@@ -1,0 +1,47 @@
+[
+  {
+    "description": "这是没有参数的get请求",
+    "request": {
+      "uri": "/getdemo",
+      "method": "get"
+    },
+    "response": {
+      "text": "no get"
+    }
+  },
+
+  {
+    "description": "带参数的get请求",
+    "request": {
+      "uri": "/getwithparam",
+      "method": "get",
+      "queries": {
+        "name": "huhansan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "text": "huhansan又回来了",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  },
+
+  {
+    "description": "这是带cookies的get请求",
+    "request": {
+      "uri": "/getwithcookies",
+      "method": "get",
+      "cookies":{
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "这是一个需要携带cookies信息才能访问的get请求",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  }
+]
